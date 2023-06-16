@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" xmlns="https://www.thymeleaf.org/" 
+th:replace="base::layout(~{::section})">
+  <head>
+    <meta charset="ISO-8859-1">
+    <title>TILE PLS</title>
+  </head>
+<body>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+      background-color: antiquewhite;
+    }
+  </style>
+  <section>
+    <div class = "container">
+      <h1 style = "color: brown;">Customer Login Form</h1>
+      <form>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Username</label>
+              <input type="text"  class="form-control" placeholder="Enter username">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Password</label>
+              <input type="password" class="form-control" placeholder="Enter password">
+            </div>
+            <button type = "button"onclick="location.href='index' ">submit</button>
+      </form>
+  </section>
+
+</body>
+</html>

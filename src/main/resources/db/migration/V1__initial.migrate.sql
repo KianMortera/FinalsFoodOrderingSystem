@@ -1,0 +1,46 @@
+CREATE TABLE Customers (
+    ID INT NOT NULL AUTO_INCREMENT,
+    Full_name VARCHAR (255) NOT NULL,
+    Username VARCHAR (255) NOT NULL,
+    Password VARCHAR (255) NOT NULL,
+    Gcash_name VARCHAR (255) NOT NULL,
+    Gcash_number BIGINT NOT NULL,
+    Role VARCHAR (255) NOT NULL,
+    PRIMARY KEY(ID)
+);
+CREATE TABLE Food_menu (
+    ID INT NOT NULL AUTO_INCREMENT,
+    Food_name VARCHAR (255) NOT NULL,
+    Price INT NOT NULL,
+    Food_nutrients VARCHAR (255) NOT NULL,
+    PRIMARY KEY (ID),
+    FOREIGN KEY (ID) REFERENCES Customers(ID)
+);
+CREATE TABLE Payment (
+    ID INT NOT NULL AUTO_INCREMENT,
+    Customer_name VARCHAR (255) NOT NULL,
+    Reference_number BIGINT NOT NULL,
+    Cellphone_number BIGINT NOT NULL,
+    PRIMARY KEY (ID),
+    FOREIGN KEY (ID) REFERENCES Customers(ID)
+);
+CREATE TABLE Orders (
+    ID INT NOT NULL AUTO_INCREMENT,
+    Food VARCHAR (255) NOT NULL,
+    Quantity INT NOT NULL,
+    Price INT NOT NULL,
+    Food_nutrients VARCHAR (255) NOT NULL,
+    PRIMARY KEY(ID),
+    FOREIGN KEY (ID) REFERENCES Food_menu(ID) 
+);
+CREATE TABLE Ordered_food (
+    ID INT NOT NULL AUTO_INCREMENT,
+    Quantity INT,
+    Food VARCHAR (255) NOT NULL,
+    Food_nutrients VARCHAR (255) NULL,
+    Date VARCHAR (255) NOT NULL,
+    Status VARCHAR (255) NOT NULL,
+    PRIMARY KEY(ID),
+    FOREIGN KEY (ID) REFERENCES Orders(ID),
+    FOREIGN KEY (ID) REFERENCES Payment(ID)
+);

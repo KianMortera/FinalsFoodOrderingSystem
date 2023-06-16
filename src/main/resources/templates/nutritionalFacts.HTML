@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en" xmlns="https://www.thymeleaf.org/" 
+th:replace="base::layout(~{::section})">
+  <head>
+    <meta charset="ISO-8859-1">
+    <title>TILE PLS</title>
+  </head>
+<body>
+  <section>
+    <!doctype html>
+    <html lang="en" xmlns="https://www.thymeleaf.org/">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Nutrients Tab</title>
+     <!--<link rel="stylesheet" href="style.css">--> 
+    
+    <style>
+
+        body {
+          padding: 0;
+          margin: 0;
+          background-color: antiquewhite;
+        }
+      
+    
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    .table-box{
+    
+        margin: 50px auto;
+    
+    }
+    
+    .table-row{
+        display: table;
+        width: 80%;
+        margin: 10px auto;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background: transparent;
+        padding: 12px 0;
+        color: #555;
+        font-size: 13px;
+        box-shadow: 0 1px 4px 0 rgba(0, 0, 50, 0.3);
+    }
+    
+    .table-cell{
+        display: table-cell;
+        width:  30%;
+        text-align: center;
+        padding: 4px 0;
+        border-right: 1px solid #d6d;
+        vertical-align: middle;
+    }
+    
+    .table-head{
+        background-color: #8665f7;
+        box-shadow: #555;
+        color: #fff;
+        font-weight: 600;
+    }
+    
+    .table-head .table-cell{
+        border-right: none;
+    }
+    
+    .last-cell{
+        border-right: none;
+    }
+    
+    .section-title{
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    
+    .backBtn{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        position: absolute;
+        top: 51px;
+        left: 60px;
+        font-size: 23px;
+        background: #08234e;
+        width: 132px;
+        height: 26px;
+        padding: 2px;
+        text-align: center;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+        box-shadow: 0 0 6px rgb(0 0 0 / 0%);
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-property: box-shadow, transform;
+        transition-property: box-shadow, transform;
+        }
+    
+
+    
+    
+    .main{
+        width: 1600px;
+        margin: 59px auto;
+    }
+    
+    </style>
+    
+    
+    
+    
+      </head>
+        <body>
+            <div class="table-box">
+    
+                <div class="section-title">
+            
+                    <h2>Nutrients Facts</h2>
+        
+            
+                    
+                </div>
+    
+                <div class="table-row table-head">
+                    <div class="table-cell">
+                        <p>Transitional Phases - Human Development</p>
+    
+                    </div>
+    
+                    <div class="table-cell">
+                        <p>Age Range</p>
+    
+                    </div>
+    
+                    <div class="table-cell">
+                        <p>Daily Calorie Needs Range</p>
+    
+                    </div>
+                </div>
+    
+    
+                <div class="table-row">
+                    <div class="table-cell">
+                        <p>Infants</p>
+    
+                    </div>
+    
+                    <div class="table-cell">
+                        <p>0 - 12 Months</p>
+    
+                    </div>
+    
+                    <div class="table-cell last-cell">
+                        <p>600-800 Calories (first 6 months)</p>
+                        <p>900-100 Calories (12 months)</p>
+                    </div>
+                </div>
+    
+    
+                
+    
+                <div class="table-row">
+                    <div class="table-cell">
+                        <p>Children</p>
+    
+                    </div>
+    
+                    <div class="table-cell">
+                        <p>1 - 3 Years Old</p>
+    
+                    </div>
+    
+                    <div class="table-cell last-cell">
+                        <p>1,000-1,400 Calories</p>
+                    </div>
+                </div>
+    
+    
+                <div class="table-row">
+                    <div class="table-cell">
+                        <p>Children</p>
+    
+                    </div>
+    
+                    <div class="table-cell">
+                        <p>4 - 8 Years Old</p>
+    
+                    </div>
+    
+                    <div class="table-cell last-cell">
+                        <p>1,200-1,800 Calories</p>
+                    </div>
+                </div>
+    
+    
+                <div class="table-row">
+                    <div class="table-cell">
+                        <p>Children and Adolescents</p>
+    
+                    </div>
+    
+                    <div class="table-cell">
+                        <p>9 - 18 Years Old</p>
+    
+                    </div>
+    
+                    <div class="table-cell last-cell">
+                        <p>Girls: 1,400-2,200 Calories</p>
+                        <p>Boys: 1,600-2,800 Calories</p>
+                    </div>
+                </div>
+    
+    
+                <div class="table-row">
+                    <div class="table-cell">
+                        <p>Adults</p>
+    
+                    </div>
+    
+                    <div class="table-cell">
+                        <p>19 - 60 Years Old</p>
+    
+                    </div>
+    
+                    <div class="table-cell last-cell">
+                        <p>Womens: 1,800-2,400 Calories</p>
+                        <p>Mens: 2,200-3,000 Calories</p>
+                    </div>
+                </div>
+    
+    
+                <div class="table-row">
+                    <div class="table-cell">
+                        <p>Older Adults</p>
+    
+                    </div>
+    
+                    <div class="table-cell">
+                        <p>60+ Years Old</p>
+    
+                    </div>
+    
+                    <div class="table-cell last-cell">
+                        <p>1,600 - 2,400</p>
+                    </div>
+                </div>
+            </div>
+        </body>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en" xmlns="https://www.thymeleaf.org/" 
+th:replace="base::layout(~{::section})">
+  <head>
+    <meta charset="ISO-8859-1">
+    <title>Cart</title>
+    <link
+    href = "https://cdn.jsdelivr.net/npm/bootstraps@5.0.2/dist/css/bootstrap.min.css"
+    rel = "stylesheet"
+    integrity= "sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+    crossorigin="anonymous">
+  </head>
+<body>
+  <section> 
+    <style>
+
+
+        .checkOutBtn:hover, .checkOutBtn:focus, .checkOutBtn:active{
+            box-shadow: 0 0 20px rgba(0, 0,0, 0.5);
+            -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+        
+        }
+        
+        .checkOutBtn{
+        
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        
+        position: absolute;
+        
+        font-size: 23px;
+        
+        background: #08234e;
+        
+        width: 132px;
+        
+        height: 26px;
+        
+        padding: 2px;
+        
+        text-align: center;
+        
+        text-decoration: none;
+        
+        text-transform: uppercase;
+        
+        color: #fff;
+        
+        border-radius: 5px;
+        
+        cursor: pointer;
+        
+        box-shadow: 0 0 6px rgb(0 0 0 / 0%);
+        
+        -webkit-transition-duration: 0.3s;
+        
+        transition-duration: 0.3s;
+        
+        -webkit-transition-property: box-shadow, transform;
+        
+        transition-property: box-shadow, transform;
+        }
+        
+        .checkOutBtn{
+          position: absolute;
+          bottom: 8px;
+          right: 16px;
+          font-size: 18px;
+        }
+        
+        
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .table-box{
+        
+            margin: 50px auto;
+        
+        }
+        
+        .table-row{
+            display: table;
+            width: 80%;
+            margin: 10px auto;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            background: transparent;
+            padding: 12px 0;
+            color: #555;
+            font-size: 13px;
+            box-shadow: 0 1px 4px 0 rgba(0, 0, 50, 0.3);
+        }
+        
+        .table-cell{
+            display: table-cell;
+            width:  30%;
+            text-align: center;
+            padding: 4px 0;
+            border-right: 1px solid #d6d;
+            vertical-align: middle;
+        }
+        
+        .table-head{
+            background-color: #8665f7;
+            box-shadow: #555;
+            color: #fff;
+            font-weight: 600;
+        }
+        
+        .table-head .table-cell{
+            border-right: none;
+        }
+        
+        .last-cell{
+            border-right: none;
+        }
+        
+        .section-title{
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        
+        .main{
+            width: 1600px;
+            margin: 59px auto;
+        }
+        
+        </style>
+        
+        
+        
+          </head>
+            <body>
+                <div class="table-box">
+        
+                    <div class="section-title">
+                
+                        <h2>FOOD CART</h2>
+                        <a href="#" class="checkOutBtn">CHECK OUT</a>
+                        
+                    </div>
+        
+                    <div class="table-row table-head">
+        
+                    
+                        <div class="table-cell">
+                                <p>ID</p>
+                        </div>
+    
+                        <div class="table-cell">
+                                <p>FOOD</p>
+                        </div>
+            
+                        <div class="table-cell">
+                                <p>QUANTITY</p>
+                        </div>
+                        <div class="table-cell">
+                             <p>NUTRIENTS</p>
+            
+                            </div>
+    
+                            <div class="table-cell">
+                                <p>DATE</p>
+                            </div>
+            
+                            <div class="table-cell">
+                                <p>STATUS</p>
+            
+                            </div>
+            
+                            <div class="table-cell">
+                                <p>PRICE</p>
+            
+                            </div>
+        
+        
+                    <div class="table-row">
+                        <div class="table-cell">
+                            <p>Pork Lechon</p>
+        
+                        </div>
+        
+                        <div class="table-cell">
+                            <p>242 Calories, Protein 27g, Fat 14</p>
+        
+                        </div>
+        
+                        <div class="table-cell">
+                            <p>₱95</p>
+        
+                        </div>
+        
+                        <div class="table-cell last-cell">
+                            <p>3</p>
+                        </div>
+                    </div>
+        
+        
+                    
+        
+                    <div class="table-row">
+                        <div class="table-cell">
+                            <p>Chicken Adobo</p>
+        
+                        </div>
+        
+                        <div class="table-cell">
+                            <p>392 Calories, Protein 37g, Fat 23g</p>
+        
+                        </div>
+        
+                        <div class="table-cell">
+                            <p>₱65</p>
+        
+                        </div>
+        
+                        <div class="table-cell last-cell">
+                            <p>2</p>
+                        </div>
+                    </div>
+        
+        
+                    </div>
+                </div>
+        
+        
+            </div>
+            
+        
+            
+  </section>
+
+
+  
+</body>
+</html>
